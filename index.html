@@ -219,7 +219,7 @@
   <link rel="preload" href="/fonts/kuunari-medium.otf" as="font" type="font/otf" crossorigin>
 
   <!-- Preload critical resources -->
-  <link rel="preload" href="./images/speaker.avif" as="image" fetchpriority="high" />
+  <link rel="preload" href="./images/speaker.avif" as="image" decoding="async" loading="lazy" />
 
   <!-- Non-critical CSS loaded asynchronously -->
   <link rel="preload" href=" ./css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -247,8 +247,9 @@
         </h1>
 
 
-        <img class="speakerImg" src="./images/speaker.avif" alt="Speaker img" width="271" height="354"
-          fetchpriority="high" loading="eager" style="aspect-ratio: 271 / 354; display: block;" />
+        <img class="speakerImg" src="./images/speaker.avif" alt="Speaker img" width="271" height="354" decoding="async"
+          loading="lazy" />
+
 
 
         <div class="hero__left_bottom">
@@ -275,7 +276,7 @@
             <span class="hero__item">JOYLAR SONI CHEKLANGAN</span>
           </div>
         </div>
-        
+
 
         <div class="timer__box">
           <div id="timer" class="timers">02:00</div>
@@ -284,15 +285,15 @@
         <ul class="nav-list">
           <h3 class="nav-title">Masterklassda siz:</h3>
           <li class="nav-item">
-            <img src="./images/stick.svg" width="22" height="22" alt="images">
+            <img src="./images/stick.svg" width="22" height="22" loading="lazy" alt="images">
             <p class="nav-link">Excel va Google Sheets'ni <b>0 dan tez</b> <br> o’rganishni </p>
           </li>
           <li class="nav-item">
-            <img src="./images/stick.svg" width="22" height="22" alt="images">
-            <p class="nav-link">ChatGPT orqali formulalarni <b>bitta tugma <br> orqali</b> qo'yishni</p>
+            <img src="./images/stick.svg" width="22" height="22" loading="lazy" alt="images">
+            <p class="nav-link">ChatGPT orqali formulalarni <b>bitta tugma orqali</b> qo'yishni</p>
           </li>
           <li class="nav-item">
-            <img src="./images/stick.svg" width="22" height="22" alt="images">
+            <img src="./images/stick.svg" width="22" height="22" loading="lazy" alt="images">
             <p class="nav-link">Oyiga qo'shimcha <b>$1,000 daromad</b> qilishni o'rganasiz</p>
           </li>
         </ul>
